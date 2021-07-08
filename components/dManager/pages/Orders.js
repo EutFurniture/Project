@@ -14,11 +14,11 @@ function createData(id, date, name, shipTo, paymentMethod, amount) {
 }
 
 const rows = [
-  createData(0, '16 Mar, 2021', 'Elvis Presley', 'Tupelo, MS', 'Cash On Delivery', 312.44),
-  createData(1, '16 Mar, 2021', 'Paul McCartney', 'London, UK', 'Cash On Delivery', 866.99),
-  createData(2, '16 Mar, 2021', 'Tom Scholz', 'Boston, MA', 'Cash On Delivery', 100.81),
-  createData(3, '16 Mar, 2021', 'Michael Jackson', 'Gary, IN', 'Cash On Delivery', 654.39),
-  createData(4, '15 Mar, 2021', 'Bruce Springsteen', 'Long Branch, NJ', 'Cash On Delivery', 212.79),
+  createData(0, '16 Mar, 2021', 'Elvis Presley', 'Tupelo, MS', 'Cash On Delivery', 312.44,'hello'),
+  createData(1, '16 Mar, 2021', 'Paul McCartney', 'London, UK', 'Cash On Delivery', 866.99, 'hello'),
+  createData(2, '16 Mar, 2021', 'Tom Scholz', 'Boston, MA', 'Cash On Delivery', 100.81, 'hello'),
+  createData(3, '16 Mar, 2021', 'Michael Jackson', 'Gary, IN', 'Cash On Delivery', 654.39, 'hello'),
+  createData(4, '15 Mar, 2021', 'Bruce Springsteen', 'Long Branch, NJ', 'Cash On Delivery', 212.79, 'hello'),
 ];
 
 function preventDefault(event) {
@@ -35,20 +35,21 @@ export default function Orders() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Recent Deliveries</Title>
+      <Title>Delivery Details</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>Date</TableCell>
+            <TableCell>Order ID</TableCell>
             <TableCell>Name</TableCell>
             <TableCell>Ship To</TableCell>
-            <TableCell>Payment Method</TableCell>
-            <TableCell align="right">Sale Amount</TableCell>
+            <TableCell>Schedule Date</TableCell>
+            <TableCell>Deliver ID</TableCell>
+            <TableCell align="right">Status</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow key={row.id}>
+             <TableRow key={row.id}>
               <TableCell>{row.date}</TableCell>
               <TableCell>{row.name}</TableCell>
               <TableCell>{row.shipTo}</TableCell>

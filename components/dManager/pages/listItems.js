@@ -31,7 +31,7 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Manage Delivery" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={Link} to="/AssignDelivers">
       <ListItemIcon style={{color:'white'}}>
         <PersonIcon />
       </ListItemIcon>
@@ -49,7 +49,7 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Cash On Delivery" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={Link} to="/ManageReturnItems">
       <ListItemIcon style={{color:'white'}}>
         <UndoIcon />
       </ListItemIcon>
@@ -61,7 +61,7 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Delivery Schedule" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={Link} to="/ManageDelivers">
       <ListItemIcon style={{color:'white'}}>
         <PeopleIcon />
       </ListItemIcon>
@@ -82,9 +82,9 @@ export const Logout = (
   <div>
     <ListItem button>
       <ListItemIcon >
-        <PowerSettingsNewIcon style= {{fontSize:40,color:"red"}}/>
+        <PowerSettingsNewIcon style= {{fontSize:40, color:"red"}}/>
       </ListItemIcon >
-      <strong><h1>LOGOUT</h1></strong>
+      <strong><h2 >LOGOUT</h2></strong>
     </ListItem>
   </div>
 )

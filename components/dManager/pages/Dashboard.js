@@ -28,6 +28,7 @@ import Orders from './Orders';
 
 
 
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -181,7 +182,7 @@ export default function Dashboard() {
         <Divider />
         <List style={{backgroundColor: '#5e35b1', color:'white'}}>{mainListItems}</List>
         <Divider />
-        <List style={{backgroundColor: '#5e35b1', color:'red'}}>{Logout}</List>
+        <List style={{backgroundColor: '#5e35b1' , color:'red'}}>{Logout}</List>
         <Divider />
       </Drawer>
       </div>

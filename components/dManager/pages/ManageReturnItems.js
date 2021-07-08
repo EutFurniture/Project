@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import clsx from 'clsx';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -20,10 +21,10 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 
-
 import { mainListItems, Logout } from './listItems';
-import ViewDelivery from './ViewDelivery';
+//import {Button} from 'react-bootstrap';
 
+import ViewReturnItems from './ViewReturnItems';
 
 function Copyright() {
   return (
@@ -108,13 +109,18 @@ const useStyles = makeStyles((theme) => ({
   container: {
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
+    alignContent:'center',
+    align:'center',
     
   },
   paper: {
+    position:'relative',
+    align:'center',
     padding: theme.spacing(2),
     display: 'flex',
     overflow: 'auto',
     flexDirection: 'column',
+   
   },
   fixedHeight: {
     height: 240,
@@ -126,11 +132,17 @@ const styles = {
   side:{
     backgroundColor:'#5e35b1',
   },
+  pack:{
+    justifyContent:'flex-around',
+    marginLeft:'20px'
+  }  ,
   
 };
 
 
-export default function ManageDelivery() {
+
+
+export default function ManageReturnItems() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
@@ -139,7 +151,6 @@ export default function ManageDelivery() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
-
 
   return (
     <div className={classes.root}>
@@ -189,27 +200,35 @@ export default function ManageDelivery() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
-
-            <Typography component="h1" variant="h6" color="inherit" align="center" noWrap className={classes.title}>
-              <strong>DELIVERY MANAGEMENT</strong>
-            </Typography>
+        
+            
+            
 
             {/* Recent Orders */}
-            <Grid item xs={12}>
-              <Paper className={classes.paper}> 
-              
-              <ViewDelivery/>
+            <Grid item xs={12}  direction="row"  >
+            
+  
+            <div >
+              <Paper className={classes.paper}>
+                <Typography component="h1" variant="h6" color="inherit"  width="100%" noWrap className={classes.title}>
+                  <strong> RETURN ITEMS MANAGEMENT</strong>
+                </Typography>
+
+                
+                <ViewReturnItems/>
+                
               </Paper>
+              </div>
             </Grid>
-
+ 
           </Grid>
-
+          
           <Box pt={4}>
             <Copyright />
           </Box>
-          
         </Container>
       </main>
     </div>
   );
 }
+
