@@ -1,0 +1,367 @@
+
+h1,h2,h3,h4,h5,h6,p { margin: 0; }
+
+
+
+#signup{
+  color: white;
+  font-size: 17px;
+}
+#ref{
+  color: white;
+  font-size: 17px;
+}
+#reg{
+  color: rgb(27, 9, 109);
+}
+  form {
+    grid-column: 2;
+    grid-row:5;
+    display: grid;
+    grid-gap: 15px;
+    margin: auto 0;
+    padding:25px;
+     
+    position: relative;
+   
+    border-radius: 10px;
+    
+    
+  }
+  h2 {
+      margin-bottom: 5px;
+      text-align: center;
+      text-shadow: 0 4px 16px rgb(20, 19, 19);
+      font-size: 30px;
+   
+      font-weight: bold;
+      color:rgb(228, 226, 214);
+    }
+    fieldset {
+      margin: 0;
+     
+      border: none;
+      border-radius: 5px;
+      padding:8px;
+     
+    }
+    
+    
+     .ulist {
+        margin: 0;
+        padding: 0;
+       
+      }
+      li {
+          display: grid;
+          align-items: center;
+          margin: 10px;
+         
+      }
+      a {
+            color: #02c;
+            font-weight: bold;
+            text-align: right;
+          }
+          
+          label {
+            text-align: left;
+            padding-bottom: 2px;
+            font-weight: bold;
+            color: rgb(5, 10, 77);
+            font-size: 20px;
+      
+          }
+          input,textarea {
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 17px;
+            
+            width: 100%;
+            color: white;
+            margin:5px 0;
+            border-top: 0;
+            border-left: 0;
+            border-right:0;
+            outline: none;
+            border-bottom: 2px solid rgb(41, 30, 30);
+            background: transparent;
+           }
+           #name{
+             color: black;
+           }
+        
+      .reset{
+        color: rgb(15, 13, 122);
+      }
+    button {
+      padding: 8px;
+      border:1px solid rgba(0,0,0,0);
+      border-radius:20px;
+      border-right: 5px;
+      border-left: 5px;
+      background:  linear-gradient(90deg,rgb(39, 125, 255) 0%,rgb(13, 91, 128) 100%  );
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      color:white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    button:hover {
+        border: 1px solid #aaf;
+      }
+  .btn2{
+        background-color: rgb(221, 11, 11);
+        padding: 6px;
+        width:50%;
+        position:relative;
+        left:27%;
+      }
+    
+   form .tile{
+     width: 100%;
+     color: white;
+     text-align: center;
+     
+   }
+    .choose{
+     background: rgb(139, 135, 135);
+     font-size:10px;
+     color: black;
+     width: 30%;
+   }
+   .page{
+    display:flex; 
+    width: 100%;
+    height:80%;
+    position:relative;
+    justify-content: center;
+    right:20%;
+    padding: 100px;
+    
+  }
+  
+
+  .info{
+    text-align: center;
+    font-weight: normal;
+    position:absolute;
+    left:25%;
+    color: rgb(20, 26, 27);
+    font-weight: bold;
+    top:15%;
+    font-size: 20px;
+    
+   }
+   select{
+     width:50%;
+   }
+   .cust_form{
+     left:20%;
+     background-color: rgb(28, 135, 206);
+     padding:20px;
+     background-size: cover;
+     width:40%;
+     
+     border-radius: 0px;
+     
+       }
+    
+ #colorselect{
+   width:5vW;
+   height: 5vh;
+   border: 3px solid blue;
+ }
+
+ #make{
+   color: white;
+   text-align:inherit;
+   position:relative;
+   top: 6%;
+ }
+ .left {
+  background-image: url('../../images/fff.png');
+  background-size: cover;
+  height: 100%;
+  border-top-left-radius: 22.5px;
+  border-bottom-left-radius: 22.5px;
+}
+
+.right {
+  padding: 35px 50px;
+  background-size: cover;
+  background-image: linear-gradient(to bottom , rgba(93, 143, 172, 0.9),rgba(9, 151, 187, 0.9)) ;
+  background-blend-mode:overlay;
+  
+  border-top-right-radius: 22.5px;
+  border-bottom-right-radius: 22.5px;
+}
+
+.contact-box {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f2f0f1;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+
+}
+ 
+
+.container {
+  position: relative;
+  width: 85%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+  left:1%;
+
+}
+#cust_but{
+  width:50%;
+   align-items: center;
+   position: relative;
+   justify-content: center;
+   left:25%;
+   border-radius: 0%;
+   background:  linear-gradient(90deg,rgb(29, 37, 49) 0%,rgb(13, 91, 128) 100%  );
+  
+}
+.cust_form label{
+  color: white;
+}
+
+.ttile{
+  color: rgb(44, 99, 99);
+  font-weight: bold;
+  text-shadow: 0 0px 8px rgb(56, 54, 54);
+}
+/*@media only screen and (min-width:425px) {
+  .page, .container {
+    position: relative;
+      display: flex;
+      max-width: 1140px;
+      padding:50px 0 0 0;
+      width:100%;
+      margin:50px auto;
+      left:5%;
+    }
+    .info{
+      padding:50px 0 0 0;
+      top:-5%;
+      right:25%;
+    }
+}*/
+  @media only screen and (max-width:1024px){
+   .container {
+      
+      display: flex;
+    
+      padding:50px 0 0 0;
+      width:80%;
+      margin:50px auto;
+      
+    }
+    .right{
+      width:109%;
+      left:0%;
+      position:relative;
+      border-top-left-radius: 22.5px;
+      border-bottom-left-radius: 22.5px;
+      
+    }
+    .contact-box{
+     
+      width:100%;
+      background-size: cover;
+     
+     
+    }
+    
+    .left{
+      display: none;
+    }
+    .info{
+      top:2%;
+      right:25%;
+      font-size:px;
+      position: relative;
+    }
+    .page{
+      display: flex;
+      padding: 50px;
+      right:6%;
+    }
+    .contact-box {
+      max-width: 900px;
+    }
+    #cust_but{
+      display: block;
+    }
+    
+  }  
+  
+  @media only screen and (max-width:465px){
+   .container {
+      
+      max-width: 1140px;
+      padding:50px 20px 0 20px;
+      width:100%;
+      margin:50px auto;
+     
+      left:3%;
+    }
+
+    .left{
+      display: none;
+    }
+    .right{
+      width:150%;
+      left:25%;
+      position:relative;
+      border-top-left-radius: 22.5px;
+      border-bottom-left-radius: 22.5px;
+      
+    }
+    .contact-box{
+      background-image:url("../../images/fff.png");
+      width:90%;
+      background-size: cover;
+     
+     
+    }
+    .info{
+      padding:50px 0 0 0;
+      top:10%;
+      left:1%;
+      width: 100%;
+      align-items: center;
+      font-size:15px;
+    }
+    .contact-box {
+      max-width: 900px;
+    }
+    .cust_form{
+      top:10%;
+      left:10%;
+    }
+    #cust_but{
+      display: block;
+    }
+  }  
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  
